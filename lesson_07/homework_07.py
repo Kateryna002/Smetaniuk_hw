@@ -50,8 +50,6 @@ def arithmetic_average(numbers):
         return None
     return sum(numbers) / len(numbers)
 
-    return ()
-
 
 # task 4
 """  Написати функцію, яка приймає рядок та повертає його у зворотному порядку.
