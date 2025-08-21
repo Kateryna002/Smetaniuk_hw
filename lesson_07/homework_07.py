@@ -121,11 +121,6 @@ def has_more_than_10_unique_chars(text):
     return unique_count > 10
 
 
-# Отримуємо рядок від користувача
-user_input = input("Введіть рядок: ")
-print(has_more_than_10_unique_chars(user_input))
-
-
 # task 8
 def starts_with_by_the_time(text):
     """
