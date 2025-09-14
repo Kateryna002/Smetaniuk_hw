@@ -4,7 +4,7 @@ from homework_10 import log_event
 
 
 def test_log_event_success():
-    with patch("your_module.logging.getLogger") as mock_get_logger:
+    with patch("homework_10.logging.getLogger") as mock_get_logger:
         mock_logger = mock_get_logger.return_value
 
         log_event("test_user", "success")
@@ -17,7 +17,7 @@ def test_log_event_success():
 
 
 def test_log_event_expired():
-    with patch("your_module.logging.getLogger") as mock_get_logger:
+    with patch("homework_10.logging.getLogger") as mock_get_logger:
         mock_logger = mock_get_logger.return_value
 
         log_event("test_user", "expired")
@@ -29,7 +29,7 @@ def test_log_event_expired():
 
 
 def test_log_event_failed():
-    with patch("your_module.logging.getLogger") as mock_get_logger:
+    with patch("homework_10.logging.getLogger") as mock_get_logger:
         mock_logger = mock_get_logger.return_value
 
         log_event("test_user", "failed")
@@ -41,7 +41,7 @@ def test_log_event_failed():
 
 
 def test_log_event_invalid_status():
-    with patch("your_module.logging.getLogger") as mock_get_logger:
+    with patch("homework_10.logging.getLogger") as mock_get_logger:
         mock_logger = mock_get_logger.return_value
 
         log_event("test_user", "something_weird")
